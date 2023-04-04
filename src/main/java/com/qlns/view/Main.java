@@ -22,6 +22,16 @@ public class Main extends javax.swing.JFrame {
 		repaint();
 	}
 
+	public void hideMenuBar(){
+		menuBar.setVisible(false);
+		revalidate();
+	}
+
+	public void showMenuBar(){
+		menuBar.setVisible(true);
+		revalidate();
+	}
+
 	/**
 	 * Creates new form Main
 	 */
@@ -34,7 +44,7 @@ public class Main extends javax.swing.JFrame {
         // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
         private void initComponents() {
 
-                jMenuBar1 = new javax.swing.JMenuBar();
+                menuBar = new javax.swing.JMenuBar();
                 jMenu1 = new javax.swing.JMenu();
                 jMenu2 = new javax.swing.JMenu();
                 jMenu3 = new javax.swing.JMenu();
@@ -49,7 +59,7 @@ public class Main extends javax.swing.JFrame {
                                 jMenu1MouseClicked(evt);
                         }
                 });
-                jMenuBar1.add(jMenu1);
+                menuBar.add(jMenu1);
 
                 jMenu2.setText("Công việc");
                 jMenu2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -57,7 +67,7 @@ public class Main extends javax.swing.JFrame {
                                 jMenu2MouseClicked(evt);
                         }
                 });
-                jMenuBar1.add(jMenu2);
+                menuBar.add(jMenu2);
 
                 jMenu3.setText("Lương");
                 jMenu3.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -65,7 +75,7 @@ public class Main extends javax.swing.JFrame {
                                 jMenu3MouseClicked(evt);
                         }
                 });
-                jMenuBar1.add(jMenu3);
+                menuBar.add(jMenu3);
 
                 jMenu4.setText("Khen thưởng");
                 jMenu4.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -73,9 +83,9 @@ public class Main extends javax.swing.JFrame {
                                 jMenu4MouseClicked(evt);
                         }
                 });
-                jMenuBar1.add(jMenu4);
+                menuBar.add(jMenu4);
 
-                setJMenuBar(jMenuBar1);
+                setJMenuBar(menuBar);
 
                 javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
                 getContentPane().setLayout(layout);
@@ -152,6 +162,6 @@ public class Main extends javax.swing.JFrame {
         private javax.swing.JMenu jMenu2;
         private javax.swing.JMenu jMenu3;
         private javax.swing.JMenu jMenu4;
-        private javax.swing.JMenuBar jMenuBar1;
+        private javax.swing.JMenuBar menuBar;
         // End of variables declaration//GEN-END:variables
 }

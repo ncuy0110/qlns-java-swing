@@ -50,6 +50,7 @@ public class TaskView extends javax.swing.JPanel {
 	 */
 	public TaskView(Main main) {
 		this.main = main;
+		main.showMenuBar();
 		initComponents();
 		reloadTable();
 		loadCombobox();

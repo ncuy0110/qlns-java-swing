@@ -49,6 +49,7 @@ public class EmployeeLogView extends javax.swing.JPanel {
 	 */
 	public EmployeeLogView(Main main) {
 		this.main = main;
+		main.showMenuBar();
 		initComponents();
 		reloadTable();
 		rbYes.setSelected(true);

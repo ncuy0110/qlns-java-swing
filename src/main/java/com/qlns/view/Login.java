@@ -19,6 +19,7 @@ public class Login extends javax.swing.JPanel {
 	 */
 	public Login(Main main) {
 		this.main = main;
+		main.hideMenuBar();
 		initComponents();
 	}
 
@@ -38,8 +39,9 @@ public class Login extends javax.swing.JPanel {
                 btnLogin = new javax.swing.JButton();
                 pfPassword = new javax.swing.JPasswordField();
 
-                jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-                jLabel1.setText("Đăng nhập");
+                jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+                jLabel1.setForeground(new java.awt.Color(153, 153, 255));
+                jLabel1.setText("Hệ thống quản lý hồ sơ nhân sự");
 
                 jLabel2.setText("Tên đăng nhập");
 
@@ -72,27 +74,26 @@ public class Login extends javax.swing.JPanel {
                                 .addGap(391, 391, 391)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addGroup(layout.createSequentialGroup()
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(jLabel2)
-                                                        .addComponent(jLabel3))
-                                                .addGap(18, 18, 18)
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                        .addComponent(tfUsername)
-                                                        .addComponent(pfPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                        .addGroup(layout.createSequentialGroup()
-                                                .addGap(82, 82, 82)
-                                                .addComponent(jLabel1))
-                                        .addGroup(layout.createSequentialGroup()
                                                 .addGap(88, 88, 88)
-                                                .addComponent(btnLogin)))
-                                .addContainerGap(396, Short.MAX_VALUE))
+                                                .addComponent(btnLogin))
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                .addComponent(jLabel1)
+                                                .addGroup(layout.createSequentialGroup()
+                                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                                .addComponent(jLabel2)
+                                                                .addComponent(jLabel3))
+                                                        .addGap(18, 18, 18)
+                                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                                .addComponent(tfUsername)
+                                                                .addComponent(pfPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addContainerGap(385, Short.MAX_VALUE))
                 );
                 layout.setVerticalGroup(
                         layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(layout.createSequentialGroup()
-                                .addGap(88, 88, 88)
+                                .addGap(87, 87, 87)
                                 .addComponent(jLabel1)
-                                .addGap(57, 57, 57)
+                                .addGap(58, 58, 58)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                         .addComponent(jLabel2)
                                         .addComponent(tfUsername, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))

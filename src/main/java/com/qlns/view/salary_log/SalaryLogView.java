@@ -20,6 +20,7 @@ public class SalaryLogView extends javax.swing.JPanel {
 	 */
 	public SalaryLogView(Main main) {
 		this.main = main;
+		main.showMenuBar();
 		initComponents();
 		reloadTable();
 	}

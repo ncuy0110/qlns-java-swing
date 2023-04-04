@@ -12,7 +12,6 @@ import com.qlns.model.Employee;
 import com.qlns.model.EmployeeLog;
 import com.qlns.model.SalaryLog;
 import com.qlns.view.Main;
-import com.qlns.view.task.TaskView;
 import java.awt.HeadlessException;
 import java.util.List;
 import javax.swing.JOptionPane;
@@ -28,6 +27,7 @@ public class EmployeeView extends javax.swing.JPanel {
 	 */
 	public EmployeeView(Main main) {
 		this.main = main;
+		main.showMenuBar();
 		initComponents();
 		reloadTable();
 	}
